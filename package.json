@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "format": "prettier . -w -l",
     "lint": "eslint . --fix",
+    "style": "stylelint \"**/*.scss\" --fix",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "sass": "^1.79.1",
     "stylelint": "^16.9.0",
     "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-scss": "^6.6.0",
     "vite": "^5.4.1"
   }

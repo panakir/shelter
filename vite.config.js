@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
+import { fileURLToPath } from "url";
 import path from "path";
 
 export default defineConfig({
   root: "src",
-  base: "./",
+  base: "/",
+  publicDir: "./public",
   resolve: {
     alias: [
       {
@@ -14,6 +16,11 @@ export default defineConfig({
         find: "@styles",
         replacement: path.resolve(__dirname, "src/assets/styles"),
       },
+      {
+        find: "@assets",
+        replacement: fileURLToPath(new URL("./src/assets", import.meta.url)),
+      },
+
       {
         find: "@scripts",
         replacement: path.resolve(__dirname, "src/assets/scripts"),

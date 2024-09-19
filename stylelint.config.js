@@ -1,10 +1,10 @@
 /** @type {import('stylelint').Config} */
 
 export default {
-  extends: "stylelint-config-recommended-scss",
+  extends: [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-standard-scss",
+  ],
   ignoreFiles: ["**/*.js", "*.json", "**/*.html"],
-  rules: {
-    "no-descending-specificity": null,
-    "color-hex-alpha": "always",
-  },
+  plugins: ["stylelint-scss"],
 };
