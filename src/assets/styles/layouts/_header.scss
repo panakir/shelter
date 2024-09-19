@@ -1,0 +1,13 @@
+.header {
+  padding-top: 55px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-top: 5px;
+  }
+}

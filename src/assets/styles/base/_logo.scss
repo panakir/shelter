@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: $color-light;
+  }
+}

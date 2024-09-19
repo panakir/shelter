@@ -1,0 +1,28 @@
+.button {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 1.02px;
+  text-align: center;
+  color: $color-dark-3xl;
+  border-radius: 100px;
+  padding: 14px 44px;
+  cursor: pointer;
+
+  &_primary {
+    background-color: $color-primary;
+    border: 1px solid transparent;
+  }
+
+  &_secondary {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+  }
+
+  @extend %transition;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}

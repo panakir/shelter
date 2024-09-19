@@ -1,0 +1,16 @@
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__link {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-dark-s;
+  }
+}

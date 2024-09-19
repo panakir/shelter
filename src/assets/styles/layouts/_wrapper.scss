@@ -1,0 +1,4 @@
+.wrapper {
+  width: clamp($mobile-width, calc(100% - (2 * 20px)), $content-width);
+  margin: 0 auto;
+}

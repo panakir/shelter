@@ -1,0 +1,18 @@
+.link {
+  font-weight: 400;
+
+  &_active {
+    position: relative;
+    color: $color-light-s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: -7px;
+      left: 0;
+      background-color: $color-primary;
+    }
+  }
+}
