@@ -1,0 +1,35 @@
+.about-us {
+  background-color: $color-light;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    padding-top: 15px;
+  }
+
+  &__title {
+    max-width: 370px;
+    color: $color-dark-l;
+  }
+
+  &__subtitle {
+    color: $color-dark-xl;
+    max-width: 430px;
+  }
+
+  &__image {
+    width: clamp(260px, 50%, 300px);
+    height: clamp(353px, 100vh, 408px);
+    background: url("@assets/images/about-us/pets.png") center / contain
+      no-repeat;
+    margin-right: 10%;
+  }
+}

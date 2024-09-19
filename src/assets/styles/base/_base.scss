@@ -11,6 +11,14 @@ h2 {
   line-height: 57.2px;
 }
 
+h3 {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: $letter-spacing-primary;
+}
+
 p {
   font-family: $font-secondary;
   font-size: 15px;
