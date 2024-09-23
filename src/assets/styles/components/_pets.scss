@@ -1,0 +1,24 @@
+.pets {
+  background-color: $color-light-l;
+
+  &__wrapper {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    margin-top: 60px;
+  }
+
+  &__buttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}

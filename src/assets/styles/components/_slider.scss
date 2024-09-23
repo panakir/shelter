@@ -1,0 +1,50 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 90px;
+  }
+}
+
+.card {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 30px;
+
+  @extend %transition;
+
+  &:hover {
+    background-color: $color-light;
+    box-shadow: 0 0 10px 0 $color-shadow;
+
+    .card__button {
+      background-color: $color-primary;
+      border: 1px solid transparent;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 270px;
+    background: url("@assets/images/pets/pets-katrine.png") center / contain
+      no-repeat;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}

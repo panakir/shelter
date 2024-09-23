@@ -20,6 +20,12 @@
     border: 1px solid $color-primary;
   }
 
+  &_arrow {
+    font-weight: 700;
+    padding: 17px;
+    border: 1px solid $color-primary;
+  }
+
   @extend %transition;
 
   &:hover {
