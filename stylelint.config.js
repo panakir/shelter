@@ -7,4 +7,7 @@ export default {
   ],
   ignoreFiles: ["**/*.js", "*.json", "**/*.html"],
   plugins: ["stylelint-scss"],
+  rules: {
+    "selector-class-pattern": null,
+  },
 };
