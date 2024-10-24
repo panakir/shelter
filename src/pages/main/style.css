@@ -91,3 +91,366 @@
   height: 728px;
   background: url('../../assets/images/promo/puppy.png') center / contain no-repeat;
 }
+
+.about {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about__content {
+  margin-top: 15px;
+}
+
+.about__title {
+  width: 370px;
+}
+
+.about__text {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 23px;
+}
+
+.about__text-content {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-dark-xl);
+}
+
+.about__image {
+  margin-right: 120px;
+  width: 300px;
+  height: 408px;
+  background: url('../../assets/images/about/pets.png') center / contain no-repeat;
+}
+
+.pets {
+  padding-top: 81px;
+  padding-bottom: 100px;
+  background-color: var(--color-light-l);
+}
+
+.pets__title {
+  text-align: center;
+}
+
+.pets__link {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 59px;
+}
+
+.slider__wrapper {
+  width: 990px;
+}
+
+.slider__list {
+  display: flex;
+  gap: 90px;
+}
+
+.slider__button {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: 2px solid var(--color-primary);
+  background: url('../../assets/icons/Arrow.svg') center / 14px 6px no-repeat; 
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.slider__button:hover  {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.slider__button_next {
+  transform: rotate(180deg);
+} 
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 270px;
+  height: 435px;
+  background-color: var(--color-light-xl);
+  border-radius: 9px; 
+}
+
+.slide__image {
+  width: 100%;
+  height: 270px;
+  border-radius: 9px 9px 0 0;
+}
+
+.slide__image_katrine {
+  background: url('../../assets/images/slider/katrine.png') center / contain no-repeat;
+}
+
+.slide__image_jennifer {
+  background: url('../../assets/images/slider/jennifer.png') center / contain no-repeat;
+}
+
+.slide__image_woody {
+  background: url('../../assets/images/slider/woody.png') center / contain no-repeat;
+}
+
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slide__title {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.136;
+  letter-spacing: .06em;
+  color: var(--color-dark-l);
+  margin-left: 1px;
+}
+
+.help {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.help__title {
+  width: 310px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.help__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.help__subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: .06em;
+  color: var(--color-dark-l);
+  margin-left: 1px;
+}
+
+.help__categories {
+  width: 1026px;
+  margin: 58px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 55px
+}
+
+.help__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.help__list_bottom {
+  gap: 118px;
+  justify-content: center;
+}
+
+.help__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.help__image {
+  width: 60px;
+  height: 60px;
+}
+
+.help__image_food {
+  background: url('../../assets/icons/help/icon-pet-food.svg')
+}
+
+.help__image_transport {
+  background: url('../../assets/icons/help/icon-transportation.svg')
+}
+
+.help__image_toys {
+  background: url('../../assets/icons/help/icon-toys.svg')  
+}
+
+.help__image_bowls {
+  background: url('../../assets/icons/help/icon-bowls-and-cups.svg')
+}
+
+.help__image_shampoos {
+  background: url('../../assets/icons/help/icon-shampoos.svg')  
+}
+
+.help__image_vitamins {
+  background: url('../../assets/icons/help/icon-vitamins.svg')
+}
+
+.help__image_medicines {
+  background: url('../../assets/icons/help/icon-medicines.svg')
+}
+
+.help__image_collars {
+  background: url('../../assets/icons/help/icon-collars-leashes.svg')
+}
+
+.help__image_areas {
+  background: url('../../assets/icons/help/icon-sleeping-area.svg')
+}
+
+.donation {
+  background-color: var(--color-light-l);
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.donation__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.donation__image {
+  margin-top: 11px;
+  width: 505px;
+  height: 261px;
+  background: url('../../assets/images/donation/donation-dog.png') center / contain no-repeat;
+}
+
+.donation__content {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.donation__title {
+  width: 300px;
+}
+
+.donation__text {
+  font-family: var(--font-secondary);
+  color: var(--color-dark-l);
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: .06em;
+}
+
+.donation__card {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  border-radius: 9px;
+  background-color: var(--color-primary-light);
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: .06em;
+}
+
+.donation__card span {
+  width: 30px;
+  height: 23px;
+  background: url('../../assets/icons/credit-card.svg') center / contain no-repeat;
+}
+
+.donation__description {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-dark-m);
+  font-style: italic;
+}
+
+.footer {
+  padding-top: 40px;
+  background: url('../../assets/images/backgrounds/top-bg-noise.png'),
+              linear-gradient(0deg, #211F20, #211F20),
+              radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+
+.footer__wrapper {
+  display: flex;
+  gap: 140px;
+}
+
+.footer__wrapper >* {
+  flex-basis: 300px;
+}
+
+.footer__info {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.footer__info_addresses {
+  gap: 32px;
+}
+
+.footer__title {
+  color: var(--color-light-xl);
+  width: 280px;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-primary);
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: .06em;
+}
+
+.footer__ico {
+  display: block;
+  width: 40px;
+  height: 32px;
+}
+
+.footer__ico_email {
+  background: url('../../assets/icons/footer/mail.svg') center / contain no-repeat;
+}
+
+.footer__ico_phone {
+  background: url('../../assets/icons/footer/phone.svg') center / contain no-repeat;
+}
+
+.footer__ico_tag {
+  flex: 0 0 22px;
+  background: url('../../assets/icons/footer/tag.svg') center / contain no-repeat;
+}
+
+.footer__image {
+  margin-left: 20px;
+  width: 300px;
+  height: 310px;
+  background: url('../../assets/images/footer/footer-puppy.png') center / contain no-repeat ;
+}
