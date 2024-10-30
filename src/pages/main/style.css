@@ -8,6 +8,7 @@
 
 .header {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .header__wrapper {
@@ -21,17 +22,15 @@
 
 .logo__title {
   color: var(--color-primary);
-  
 }
 
 .logo__subtitle {
   display: block;
-  font-family: var(--color-primary);
   font-size: 13px;
-  line-height: 1.5;
-  letter-spacing: .1em;
+  line-height: 1.15;
+  letter-spacing: 1.3px;
   color: var(--color-light-xl);
-  margin-top: 8px;
+  margin-top: 11px;
   margin-left: 4px;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .promo {
-  margin-top: 87px;
+  margin-top: 89px;
 }
 
 .promo__wrapper {
@@ -209,6 +208,26 @@
   background: url('../../assets/images/slider/woody.png') center / contain no-repeat;
 }
 
+.slide__image_sophia {
+  background: url('../../assets/images/slider/sophia.png') center / contain no-repeat;
+}
+
+.slide__image_timmy {
+  background: url('../../assets/images/slider/timmy.png') center / contain no-repeat;
+}
+
+.slide__image_charly {
+  background: url('../../assets/images/slider/charly.png') center / contain no-repeat;
+}
+
+.slide__image_scarlett {
+  background: url('../../assets/images/slider/scarlet.png') center / contain no-repeat;
+}
+
+.slide__image_freddie {
+  background: url('../../assets/images/slider/freddie.png') center / contain no-repeat;
+}
+
 .slide__content {
   display: flex;
   flex-direction: column;
@@ -324,7 +343,7 @@
 .donation {
   background-color: var(--color-light-l);
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 99px;
 }
 
 .donation__wrapper {

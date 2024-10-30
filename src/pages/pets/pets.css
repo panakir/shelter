@@ -1,0 +1,66 @@
+
+@import '../main/style.css';
+
+
+.logo__title {
+  color: var(--color-dark-l);
+}
+
+.logo__subtitle  {
+  color: var(--color-dark-3xl);
+}
+
+.nav__link {
+  color: var(--color-dark-l);
+}
+
+.nav__link:not(.link_active):hover {
+  color: var(--color-dark-3xl);
+  cursor: pointer;
+}
+
+.pets__title {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gallery {
+  margin-top: 57px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+}
+
+.gallery__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.gallery__button {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: 2px solid var(--color-primary);
+  color: var(--color-dark-3xl);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: .06em;
+  transition: var(--transition);
+}
+
+.gallery__button_active {
+  background-color: var(--color-primary);
+}
+
+.gallery__button:not(.gallery__button_active):hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
