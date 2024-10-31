@@ -48,12 +48,31 @@
   font-size: 15px;
   line-height: 1.6;
   color: var(--color-dark-s);
-  cursor: default;
+  position: relative;
+  transition: var(--transition);
+
+}
+
+.nav__link:not(.link_active)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: -7px;
+  left: 50%;
+  height: 3px;
+  background-color: var(--color-primary);
+  transform: translateX(-50%);
+  transition: var(--transition);
 }
 
 .nav__link:not(.link_active):hover {
   color: var(--color-primary);
   cursor: pointer;
+}
+
+.nav__link:not(.link_active):hover:after {
+  width: 100%;
 }
 
 .promo {
@@ -107,6 +126,12 @@
 
 .about__title {
   width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title span::after {
+  transform: rotate(-180deg);
 }
 
 .about__text {
@@ -137,7 +162,9 @@
 }
 
 .pets__title {
+  width: 400px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .pets__link {
@@ -188,6 +215,16 @@
   height: 435px;
   background-color: var(--color-light-xl);
   border-radius: 9px; 
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.slide:hover {  
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.slide:hover .link_btn {
+  background-color: var(--color-primary-light);
 }
 
 .slide__image {
@@ -390,6 +427,10 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: .06em;
+}
+
+.donation__card:hover {
+  background-color: var(--color-primary);
 }
 
 .donation__card span {
