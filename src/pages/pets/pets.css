@@ -26,11 +26,19 @@
 
 .nav__link {
   color: var(--color-dark-l);
+
+  @media (width <= 768px) { 
+    color: var(--color-light-s);
+  }
 }
 
 .nav__link:not(.link_active):hover {
   color: var(--color-dark-3xl);
   cursor: pointer;
+
+  @media (width <= 768px) { 
+    color: var(--color-primary-light);
+  }
 }
 
 .burger__line {
@@ -39,6 +47,12 @@
 
 .burger__line::after, .burger__line::before {
   background-color: var(--color-dark);
+}
+
+.burger_active .burger__line, 
+.burger_active .burger__line::after, 
+.burger_active .burger__line::before {
+  background-color: var(--color-primary);
 }
 
 .main {
