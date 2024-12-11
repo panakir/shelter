@@ -86,6 +86,10 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -119,6 +123,9 @@ img {
     padding: 0 10px;  
   }
 }
+
+
+/* LINKS */
 
 .link {
   font-family: var(--font-secondary);
@@ -169,4 +176,19 @@ img {
 .link_btn_transparent:hover {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
+}
+
+.button {
+  padding: 15px 45px;
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  line-height: 1.3;
+  color: var(--color-dark-3xl);
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: var(--color-primary-light);
 }
