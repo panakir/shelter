@@ -15,7 +15,6 @@ const CssClasses = {
   NO_TRANSITION: 'slider__container_no-transition',
 }
 
-const COUNT_SLIDES = 3
 const COUNT_BLOCKS = 3
 const ORDER_VISIBLE_SLIDES = 2
 const slides = []
@@ -28,6 +27,9 @@ let deltaOrder = 0
 let slidesContainer = null
 let prevBtn = null
 let nextBtn = null
+let width = window.innerWidth
+
+const COUNT_SLIDES = width > 1040 ? 3 : width >= 768 ? 2 : 1
 
 const generateSlider = () => {
   prevBtn = createElement('button', CssClasses.BUTTON)
