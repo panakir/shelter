@@ -15,7 +15,12 @@ const CssClasses = {
   LIST_ITEM: 'modal__list-item',
 }
 
-const ListCharacteristics = ['age', 'inoculations', 'diseases', 'parasites']
+const ListCharacteristics = [
+  'age',
+  'inoculations',
+  'diseases',
+  'parasites'
+]
 
 const createModalComponent = (name) => {
   const pet = pets.find(pet => pet.name === name)

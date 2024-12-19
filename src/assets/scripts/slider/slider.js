@@ -1,9 +1,8 @@
 import { createElement } from '../utils.js'
-import { renderSlide } from './slide.js'
+import { renderSlide } from '../shared/slide.js'
 import pets from '../../data/pets.js'
 
 const slider = document.getElementById('slider')
-
 
 const CssClasses = {
   BUTTON: [ 'slider__button'],
