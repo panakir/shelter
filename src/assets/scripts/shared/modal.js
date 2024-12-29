@@ -74,12 +74,12 @@ function generateList(pet) {
 }
 
 function closeModal () {
+  event.stopPropagation()
   const { target }  = event
   if(target.classList.contains(CssClasses.BUTTON) || target.classList.contains(CssClasses.MODAL)) {
     document.body.classList.remove('body_fixed')
     document.querySelector(`.${CssClasses.MODAL}`).remove()
   }
 }
-
 
 export { createModalComponent } 
