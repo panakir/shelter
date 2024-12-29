@@ -445,6 +445,7 @@
   background-color: var(--color-light-xl);
   border-radius: 9px; 
   cursor: pointer;
+  opacity: 1;
   transition: var(--transition);
 }
 
