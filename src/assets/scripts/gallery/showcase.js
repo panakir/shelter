@@ -15,8 +15,12 @@ const TEXT_LAST_PAGE_BUTTON = '>>'
 const TEXT_PREV_PAGE_BUTTON = '<'
 const TEXT_NEXT_PAGE_BUTTON = '>'
 const TEXT_FIRST_PAGE_BUTTON = '<<'
+
+const displayWidth = window.innerWidth
 const COUNT_COPY = 6
 const initialPetsArray = getInitialPetsArray()
+const petsPerPage = displayWidth < 1280 && displayWidth >= 768 ? 6 : displayWidth < 768 ? 3 : 8 
+const pagesAmount = initialPetsArray.length / petsPerPage
 
 let firstPageBtn = null
 let prevPageBtn = null
@@ -24,7 +28,6 @@ let lastPageBtn = null
 let nextPageBtn = null
 let currentPageButton = null
 let currentPage = 1
-let petsPerPage = 8
 
 function getInitialPetsArray() {
   const initialPetsArray = []
@@ -85,7 +88,7 @@ function firstPageButtonClickHandler() {
 }
 
 function lastPageButtonClickHandler() {
-  currentPage = COUNT_COPY
+  currentPage = pagesAmount
   currentPageButton.textContent = currentPage
   disabledButtons()
   changeShowcasePage()
@@ -118,7 +121,7 @@ function enabledButtons() {
     firstPageBtn.disabled = true
     prevPageBtn.disabled = true
   }
-  if(currentPage === COUNT_COPY) {
+  if(currentPage === pagesAmount) {
     lastPageBtn.disabled = true
     nextPageBtn.disabled = true
   }
